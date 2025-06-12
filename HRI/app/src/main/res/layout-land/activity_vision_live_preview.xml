@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+  <com.google.mlkit.vision.demo.java.viewmanager.CameraSourcePreview
+      android:id="@+id/preview_view"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/control"/>
+
+  <com.google.mlkit.vision.demo.java.viewmanager.GraphicOverlay
+      android:id="@+id/graphic_overlay"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      app:layout_constraintStart_toStartOf="@id/preview_view"
+      app:layout_constraintEnd_toEndOf="@id/preview_view"/>
+
+  <LinearLayout
+      android:id="@id/control"
+      android:layout_width="220dp"
+      android:layout_height="match_parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:orientation="vertical"
+      android:background="#000">
+
+    <ToggleButton
+        android:id="@+id/facing_switch"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|start"
+        android:background="@layout/toggle_style"
+        android:checked="false"
+        android:textOff=""
+        android:textOn="" />
+
+    <ToggleButton
+        android:id="@+id/emotion_regular"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:checked="true"
+        android:textOff="Emotion_Regular"
+        android:textOn="Emotion_Regular" />
+
+    <ToggleButton
+        android:id="@+id/emotion_event"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:checked="true"
+        android:textOff="Emotion_Event"
+        android:textOn="Emotion_Event"/>
+
+    <ToggleButton
+        android:id="@+id/action_event"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:checked="true"
+        android:textOff="Action_Event"
+        android:textOn="Action_Event"/>
+
+    <ToggleButton
+        android:id="@+id/pose_regular"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:checked="true"
+        android:textOff="Pose_Regular"
+        android:textOn="Pose_Regular"/>
+
+    <ImageButton
+        android:id="@+id/imagebutton_human"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/human_g"
+        />
+  </LinearLayout>
+
+  <TextView
+      android:id="@+id/text_emotion_regular"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginStart="20dp"
+      android:textColor="@color/blue"
+      android:textSize="30dp"
+      android:textStyle="bold"
+      />
+
+  <TextView
+      android:id="@+id/text_emotion_event"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toBottomOf="@+id/text_emotion_regular"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="10dp"
+      android:textColor="@color/red"
+      android:textSize="30dp"
+      android:textStyle="bold"
+      />
+  <TextView
+      android:id="@+id/text_pose_regular"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintLeft_toRightOf="@+id/text_emotion_event"
+      android:layout_marginStart="20dp"
+      android:textColor="@color/blue"
+      android:textSize="30dp"
+      android:textStyle="bold"
+      />
+  <TextView
+      android:id="@+id/text_pose_exercise"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toBottomOf="@+id/text_pose_regular"
+      app:layout_constraintLeft_toRightOf="@+id/text_emotion_event"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="10dp"
+      android:textColor="@color/red"
+      android:textSize="30dp"
+      android:textStyle="bold"
+      />
+</androidx.constraintlayout.widget.ConstraintLayout>

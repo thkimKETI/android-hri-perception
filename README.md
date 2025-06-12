@@ -1,10 +1,22 @@
-# KETI Human Robot Interaction (HRI) System
+# 🤖 KETI Human Robot Interaction (HRI) System
 
 [![Android](https://img.shields.io/badge/Platform-Android-green.svg)](https://developer.android.com)
 [![API](https://img.shields.io/badge/API-26%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=26)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 An Android application for Human-Robot Interaction research that provides comprehensive human behavior analysis through **Pose Detection**, **Action Recognition**, and **Emotion Analysis** using Google ML Kit and custom object detection models.
+
+## 📸 Demo Screenshots
+
+<div align="center">
+  <img src="demo_1.png" width="600" alt="Emotion Recognition Demo"/>
+  <br>
+  <em>Real-time Emotion Recognition</em>
+  <br><br>
+  <img src="demo_2.png" width="600" alt="Action and Pose Recognition Demo"/>
+  <br>
+  <em>Action and Pose Recognition</em>
+</div>
 
 ## 🎯 Core Features
 

@@ -311,18 +311,17 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
+## 📞 Maintainer
+
+**Taehyeon Kim, Ph.D.**  
+Senior Researcher, Korea Electronics Technology Institute (KETI)  
+📧 [taehyeon.kim@keti.re.kr](mailto:taehyeon.kim@keti.re.kr)  🌐 [Homepage](https://rcard.re.kr/detail/OISRzd7ua0tW0A1zMEwbKQ/information)
+
+
 ## 🙏 Acknowledgments
 
-- **Google ML Kit Team** for providing robust computer vision APIs
-- **KETI Research Team** for HRI system design and implementation
-- **Android CameraX Team** for modern camera framework support
+This work was supported by Korea Evaluation Institute of Industrial Technology(KEIT) grant funded by the Korea government(MOTIE). (No 20009760. Development of human friendly multipurpose service robot and new market creation by applying human robot interaction design)
 
-## 📞 Support
-
-- **Issues**: Use GitHub Issues for bug reports and feature requests
-- **Documentation**: Check project wiki for detailed implementation guides
-- **Contact**: [contact@keti.re.kr](mailto:contact@keti.re.kr)
-- **Website**: [KETI Official Website](https://www.keti.re.kr)
 
 ---
 
